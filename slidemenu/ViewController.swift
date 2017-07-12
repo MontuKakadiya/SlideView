@@ -21,15 +21,22 @@ class ViewController: UIViewController {
     @IBOutlet var BottomCons: NSLayoutConstraint!
     @IBOutlet var RightCons: NSLayoutConstraint!
     
-    var leftmenu = true
-    var topmenu = true
-    var bottommenu = true
-    var rightmenu = true
+    var leftmenu = false
+    var topmenu = false
+    var bottommenu = false
+    var rightmenu = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        LeftView.layer.shadowOpacity = 5
+        LeftView.layer.shadowRadius = 10
+        LeftView.layer.shadowColor = UIColor.red.cgColor
+        
+        TopView.layer.shadowOpacity = 5
+        TopView.layer.shadowRadius = 10
+        TopView.layer.shadowColor = UIColor.red.cgColor
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -46,7 +53,7 @@ class ViewController: UIViewController {
         if (leftmenu)
         {
             LeftCons.constant = -700
-           animation()
+            animation()
         }else{
             LeftCons.constant = 0
             animation()
