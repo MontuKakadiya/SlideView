@@ -23,6 +23,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full-HD-Wallpapers-For-Mobile-Wide.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DfP-hZ-cP8">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANo-r0-Enu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" id="ApU-Iy-sXO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoE-6W-51t" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="-936" width="375" height="533.5"/>
                                 <subviews>
@@ -94,14 +105,22 @@
                             <constraint firstItem="xXy-hZ-Qlg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="700" id="67m-1g-Z5Y"/>
                             <constraint firstItem="iNy-cW-EBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7r8-GM-Zi6"/>
                             <constraint firstItem="aoE-6W-51t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H2W-xd-tgz"/>
+                            <constraint firstItem="ANo-r0-Enu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="LML-mh-h1W"/>
                             <constraint firstItem="iNy-cW-EBe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="NdA-Zj-M2n"/>
+                            <constraint firstItem="DfP-hZ-cP8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SWC-ZJ-CUX"/>
                             <constraint firstItem="Dz5-RR-6To" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VKQ-b3-Hqz"/>
+                            <constraint firstItem="DfP-hZ-cP8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOy-Ex-xPp"/>
+                            <constraint firstItem="ANo-r0-Enu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wgq-dM-crZ"/>
                             <constraint firstItem="xXy-hZ-Qlg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="cIQ-Oz-Wqf"/>
                             <constraint firstItem="xXy-hZ-Qlg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="dG4-Wa-aie"/>
                             <constraint firstItem="iNy-cW-EBe" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="1000" id="fsz-e1-hfc"/>
                             <constraint firstItem="aoE-6W-51t" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="h1S-cP-Hth"/>
+                            <constraint firstItem="DfP-hZ-cP8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="lmX-t5-QnY"/>
                             <constraint firstItem="Dz5-RR-6To" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="mg9-MY-6rD"/>
+                            <constraint firstItem="ANo-r0-Enu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t2q-ut-hVH"/>
+                            <constraint firstItem="ANo-r0-Enu" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="tUV-1D-dSL"/>
                             <constraint firstItem="Dz5-RR-6To" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uzQ-Bf-oFW"/>
+                            <constraint firstItem="DfP-hZ-cP8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="wKT-IY-clS"/>
                             <constraint firstItem="Dz5-RR-6To" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-700" id="wW7-aO-Zkf"/>
                             <constraint firstItem="aoE-6W-51t" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="xS8-Z2-lfS"/>
                             <constraint firstItem="aoE-6W-51t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-1000" id="xfp-hL-DI0"/>
@@ -143,11 +162,12 @@
                         <outlet property="RightView" destination="xXy-hZ-Qlg" id="Amm-8Y-KJJ"/>
                         <outlet property="TopCons" destination="xfp-hL-DI0" id="7rS-BU-Qzk"/>
                         <outlet property="TopView" destination="aoE-6W-51t" id="1fE-hb-ESN"/>
+                        <outlet property="visulview" destination="ANo-r0-Enu" id="Q9s-OW-E4x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="-2135"/>
+            <point key="canvasLocation" x="305" y="-2487"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fw0-Ui-srY">
@@ -179,7 +199,10 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-330" y="-2108"/>
+            <point key="canvasLocation" x="-655" y="-2486"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Full-HD-Wallpapers-For-Mobile-Wide.jpg" width="640" height="960"/>
+    </resources>
 </document>

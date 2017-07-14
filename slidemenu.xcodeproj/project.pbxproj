@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C59BE511F179793000363B4 /* Full-HD-Wallpapers-For-Mobile-Wide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C59BE501F179793000363B4 /* Full-HD-Wallpapers-For-Mobile-Wide.jpg */; };
 		4CFC3FFD1F1519D100FAE3B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC3FFC1F1519D100FAE3B7 /* AppDelegate.swift */; };
 		4CFC3FFF1F1519D100FAE3B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC3FFE1F1519D100FAE3B7 /* ViewController.swift */; };
 		4CFC40021F1519D100FAE3B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFC40001F1519D100FAE3B7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C59BE501F179793000363B4 /* Full-HD-Wallpapers-For-Mobile-Wide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Full-HD-Wallpapers-For-Mobile-Wide.jpg"; sourceTree = "<group>"; };
 		4CFC3FF91F1519D100FAE3B7 /* slidemenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slidemenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFC3FFC1F1519D100FAE3B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CFC3FFE1F1519D100FAE3B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				4CFC3FFC1F1519D100FAE3B7 /* AppDelegate.swift */,
-				4CFC3FFE1F1519D100FAE3B7 /* ViewController.swift */,
 				4CFC40001F1519D100FAE3B7 /* Main.storyboard */,
+				4CFC3FFE1F1519D100FAE3B7 /* ViewController.swift */,
+				4C59BE501F179793000363B4 /* Full-HD-Wallpapers-For-Mobile-Wide.jpg */,
 				4CFC40031F1519D100FAE3B7 /* Assets.xcassets */,
 				4CFC40051F1519D100FAE3B7 /* LaunchScreen.storyboard */,
 				4CFC40081F1519D100FAE3B7 /* Info.plist */,
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C59BE511F179793000363B4 /* Full-HD-Wallpapers-For-Mobile-Wide.jpg in Resources */,
 				4CFC40071F1519D100FAE3B7 /* LaunchScreen.storyboard in Resources */,
 				4CFC40041F1519D100FAE3B7 /* Assets.xcassets in Resources */,
 				4CFC40021F1519D100FAE3B7 /* Main.storyboard in Resources */,
@@ -299,6 +303,7 @@
 				4CFC400D1F1519D100FAE3B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

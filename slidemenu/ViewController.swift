@@ -21,11 +21,16 @@ class ViewController: UIViewController {
     @IBOutlet var BottomCons: NSLayoutConstraint!
     @IBOutlet var RightCons: NSLayoutConstraint!
     
+    
+    
+    @IBOutlet var visulview: UIVisualEffectView!
+    
     var leftmenu = false
     var topmenu = false
     var bottommenu = false
     var rightmenu = false
     
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +43,7 @@ class ViewController: UIViewController {
         TopView.layer.shadowRadius = 10
         TopView.layer.shadowColor = UIColor.red.cgColor
         
+        visulview.isHidden = true
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -54,9 +60,11 @@ class ViewController: UIViewController {
         {
             LeftCons.constant = -700
             animation()
+            animation1()
         }else{
             LeftCons.constant = 0
             animation()
+            animation2()
         }
         leftmenu = !leftmenu
     }
@@ -67,11 +75,13 @@ class ViewController: UIViewController {
             TopCons.constant = -1000
             TopView.isHidden = true
             animation()
+            animation1()
             
         }else{
             TopCons.constant = 0
              TopView.isHidden = false
             animation()
+            animation2()
         }
         topmenu = !topmenu
     }
@@ -80,10 +90,12 @@ class ViewController: UIViewController {
         {
             BottomCons.constant = 1000
             animation()
+            animation1()
             
         }else{
             BottomCons.constant = 0
             animation()
+            animation2()
             
         }
 
@@ -94,10 +106,12 @@ class ViewController: UIViewController {
         {
            RightCons.constant = 700
             animation()
+            animation1()
            
         }else{
             RightCons.constant = 0
             animation()
+            animation2()
         }
         rightmenu = !rightmenu
 
@@ -110,6 +124,21 @@ class ViewController: UIViewController {
             
         })
     }
+    
+    func animation1()
+    {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.visulview.isHidden = true
+            
+        })
+    }
 
+    func animation2()
+    {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.visulview.isHidden = false
+            
+        })
+    }
 }
 
